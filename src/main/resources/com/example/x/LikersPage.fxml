@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="468.0" prefWidth="651.0" style="-fx-background-radius: 25;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.LikersListView">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="130.0" prefWidth="140.0" style="-fx-background-radius: 25; -fx-background-color: e1dfdf;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Likes">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#backClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                            <image>
+                                <Image url="@../../../Icon/logout_144px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+            </children>
+        </VBox>
+
+        <AnchorPane layoutX="170.0" layoutY="14.0" prefHeight="439.0" prefWidth="462.0" style="-fx-background-radius: 25; -fx-border-color: e1dfdf; -fx-border-width: 3; -fx-border-radius: 25;">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="15.0" layoutY="14.0" prefHeight="410.0" prefWidth="434.0" spacing="10.0">
+                    <children>
+                        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Liked by" />
+                        <Label fx:id="likersCountLabel" style="-fx-font-size: 12; -fx-text-fill: gray;" text="0 likes" />
+                        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="360.0" VBox.vgrow="ALWAYS">
+                            <VBox fx:id="likersListContainer" spacing="8" style="-fx-padding: 5;" />
+                        </ScrollPane>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

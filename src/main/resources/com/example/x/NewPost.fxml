@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="468.0" prefWidth="651.0" style="-fx-background-radius: 25;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.NewPostView">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="326.0" prefWidth="140.0" spacing="15.0" style="-fx-background-radius: 25; -fx-background-color: e1dfdf;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#homeClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/home.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="77.0" onMouseClicked="#SearchClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/search.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="129.0" onMouseClicked="#profileClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/contacts_512px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" onMouseClicked="#messagesClicked" prefHeight="37.0" prefWidth="140.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/chat_bubble_144px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text onMouseClicked="#messagesClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="181.0" prefHeight="37.0" prefWidth="157.0" style="-fx-border-color: e1dfdf;">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/Plus_480px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text fill="#1500ff" strokeType="OUTSIDE" strokeWidth="0.0" text="New">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </HBox>
+            </children>
+        </VBox>
+        <AnchorPane layoutX="170.0" layoutY="14.0" prefHeight="439.0" prefWidth="462.0" style="-fx-background-radius: 25; -fx-border-color: e1dfdf; -fx-border-width: 3; -fx-border-radius: 25;">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="15.0" layoutY="10.0" prefHeight="418.0" prefWidth="432.0" spacing="10.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10">
+                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New Post">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Text>
+                            <Label fx:id="replyLabel" style="-fx-text-fill: #1DA1F2; -fx-font-size: 12;" visible="false" />
+                            <HBox HBox.hgrow="ALWAYS" />
+                            <Button fx:id="postButton" mnemonicParsing="false" onAction="#handleCreatePost" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Post" textFill="WHITE" />
+                        </HBox>
+
+                        <TextArea fx:id="postTextArea" prefHeight="200.0" prefWidth="423.0" promptText="Post Text ..." wrapText="true" />
+
+                        <HBox alignment="CENTER" spacing="10">
+                            <Button fx:id="uploadButton" onAction="#handleUploadMedia" style="-fx-background-color: blue; -fx-text-fill: white;" text="Upload Image/Video" />
+                            <Label fx:id="fileLabel" text="No file selected" textFill="gray" />
+                            <Button fx:id="removeButton" onAction="#handleRemoveMedia" style="-fx-background-color: red; -fx-text-fill: white;" text="✕" visible="false" />
+                        </HBox>
+
+                        <Label fx:id="errorLabel" textFill="RED" visible="false" />
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

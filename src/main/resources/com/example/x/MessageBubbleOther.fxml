@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" spacing="5.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.card.MessageBubbleController">
+
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+    </padding>
+
+    <children>
+        <VBox fx:id="messageBox" maxWidth="300.0" spacing="3.0" style="-fx-background-color: e1dfdf; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black;">
+
+            <padding>
+                <Insets bottom="8.0" left="12.0" right="12.0" top="8.0" />
+            </padding>
+
+            <children>
+                <Label fx:id="textLabel" textFill="BLACK" wrapText="true">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" textFill="GRAY">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</HBox>

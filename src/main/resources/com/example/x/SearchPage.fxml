@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="468.0" prefWidth="651.0" style="-fx-background-radius: 25;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.SearchPageView">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="326.0" prefWidth="140.0" spacing="15.0" style="-fx-background-radius: 25; -fx-background-color: e1dfdf;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <HBox alignment="CENTER_LEFT" onMouseClicked="#homeClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/home.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="77.0" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/search_144px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text fill="#1500ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="129.0" onMouseClicked="#profileClicked" prefHeight="37.0" prefWidth="157.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/contacts_512px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" onMouseClicked="#messagesClicked" prefHeight="37.0" prefWidth="140.0">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/chat_bubble_144px.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text onMouseClicked="#messagesClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="181.0" onMouseClicked="#newButtonClicked" prefHeight="37.0" prefWidth="157.0" style="-fx-border-color: e1dfdf;">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Icon/addcircle.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="15.0" right="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Text>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+            </children>
+        </VBox>
+        <AnchorPane layoutX="170.0" layoutY="14.0" prefHeight="439.0" prefWidth="462.0" style="-fx-background-radius: 25; -fx-border-color: e1dfdf; -fx-border-width: 3; -fx-border-radius: 25;">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="451.0" spacing="5.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+                    <children>
+                        <ComboBox fx:id="searchTypeComboBox" prefWidth="120.0" promptText="Choose Item" style="-fx-background-color: e1dfdf; -fx-background-radius: 15;">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                </FXCollections>
+                            </items>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </ComboBox>
+                        <TextField fx:id="searchTextField" promptText="Search..." style="-fx-background-color: white; -fx-border-radius: 15; -fx-border-color: e1dfdf; -fx-border-width: 2;" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <ScrollPane hbarPolicy="NEVER" layoutX="23.0" layoutY="65.0" prefHeight="354.0" prefWidth="426.0" style="-fx-background-radius: 15;">
+               <content>
+                  <VBox fx:id="SearchList" prefWidth="426.0" spacing="5.0" />
+               </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

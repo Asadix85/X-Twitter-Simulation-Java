@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-color: e1dfdf; -fx-border-radius: 15; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.card.NotificationCardView">
+
+    <padding>
+        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+    </padding>
+
+    <children>
+        <ImageView fx:id="iconImageView" fitHeight="35.0" fitWidth="35.0" />
+        <VBox alignment="CENTER_LEFT" spacing="2.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label fx:id="contentLabel" style="-fx-font-size: 13;" wrapText="true">
+                    <font>
+                        <Font name="System" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" style="-fx-text-fill: gray; -fx-font-size: 11;" />
+            </children>
+        </VBox>
+        <Label fx:id="unreadIndicator" style="-fx-background-color: #1DA1F2; -fx-background-radius: 100; -fx-text-fill: white; -fx-font-size: 10;" text="●" visible="false" />
+    </children>
+</HBox>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-radius: 15; -fx-border-color: e1dfdf; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.card.UserCardView">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="10.0">
+            <children>
+                <ImageView fx:id="userProfilePic" fitHeight="52.0" fitWidth="50.0" onMouseClicked="#userProfileClicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Icon/supervisedusercircle.png" />
+                    </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </ImageView>
+            </children>
+        </VBox>
+        <VBox layoutX="54.0" layoutY="3.0" prefHeight="78.0" prefWidth="272.0" spacing="3" style="-fx-background-radius: 15; -fx-border-color: e1dfdf; -fx-border-width: 2; -fx-border-radius: 15;">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+               <children>
+                      <Label fx:id="fullNameLabel" onMouseClicked="#userProfileClicked" prefHeight="17.0" text="Full Name">
+                          <font>
+                              <Font name="System Bold" size="13.0" />
+                          </font>
+                      </Label>
+                  <ImageView fx:id="AccountLabel" fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../../Icon/approvalG_480px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+                <Label fx:id="usernameLabel" onMouseClicked="#userProfileClicked" prefHeight="17.0" style="-fx-text-fill: gray; -fx-font-size: 12;" text="\@username" />
+                <Label fx:id="bioLabel" style="-fx-text-fill: gray; -fx-font-size: 12;" text="Bio..." wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            </children>
+         <padding>
+            <Insets left="5.0" top="2.0" />
+         </padding>
+        </VBox>
+      <VBox alignment="CENTER" layoutX="330.0" layoutY="4.0" prefWidth="76.0" spacing="4.0">
+         <children>
+              <Button fx:id="followButton" mnemonicParsing="false" onMouseClicked="#followButtonClicked" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: blue; -fx-background-radius: 25;" text="Follow" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="12.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Button>
+            <HBox prefHeight="38.0" prefWidth="76.0" style="-fx-background-color: e1dfdf; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: black;">
+               <children>
+                  <Button fx:id="chatButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#chatButtonClicked" prefHeight="34.0" style="-fx-background-color: e1dfdf; -fx-background-radius: 25;" text="Chat">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="countOfUnreadMessage" alignment="CENTER" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-color: black; -fx-border-radius: 50;" text="--">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="2.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

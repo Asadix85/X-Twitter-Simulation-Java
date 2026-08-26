@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#hashtagClicked" prefHeight="60.0" style="-fx-background-radius: 15; -fx-border-color: e1dfdf; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.card.HashtagCardView">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="412.0" spacing="10">
+            <children>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Icon/hashtag_large_500px.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="hashtagTitleLabel" prefHeight="17.0" prefWidth="200.0" text="#Hashtag">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="usageCountLabel" prefHeight="17.0" prefWidth="100.0" style="-fx-text-fill: gray; -fx-font-size: 12;" text="0 posts" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

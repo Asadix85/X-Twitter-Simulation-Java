@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="503.0" prefWidth="480.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.x.view.GatewayView">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="76.0" prefHeight="188.0" prefWidth="196.0" spacing="15.0" style="-fx-background-color: e1dfdf; -fx-background-radius: 25;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="loginUsernameOrEmailTF" prefHeight="35.0" prefWidth="186.0" promptText="Username or Email" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #2e5dbc;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="LoginPasswordPF" prefHeight="35.0" promptText="Password" style="-fx-background-radius: 50; -fx-border-color: #2e5dbc; -fx-border-radius: 50;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Button mnemonicParsing="false" onMouseClicked="#SignInClicked" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Sign In" textFill="WHITE" />
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="256.0" layoutY="76.0" prefHeight="389.0" prefWidth="196.0" spacing="15.0" style="-fx-background-color: e1dfdf; -fx-background-radius: 25;">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="nameR" prefHeight="35.0" promptText="Full Name" style="-fx-background-radius: 50; -fx-border-color: #2e5dbc; -fx-border-radius: 50;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="usernameR" prefHeight="35.0" promptText="Username" style="-fx-background-radius: 50; -fx-border-color: #2e5dbc; -fx-border-radius: 50;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="emailR" prefHeight="35.0" promptText="Email" style="-fx-border-color: #2e5dbc; -fx-background-radius: 50; -fx-border-radius: 50;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="phoneNumberR" prefHeight="35.0" promptText="Phone Number" style="-fx-border-color: #2e5dbc; -fx-background-radius: 50; -fx-border-radius: 50;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="passwordR" prefHeight="35.0" promptText="Password" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #2e5dbc;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="ConfirmPR" layoutX="10.0" layoutY="227.0" prefHeight="35.0" promptText="Confirm Password" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #2e5dbc;">
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onMouseClicked="#SignUpClicked" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Sign Up" textFill="WHITE" />
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+        <Text layoutX="143.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To X">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <Text fill="#c5c3c6" fontSmoothingType="LCD" layoutX="89.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Design by SDX" />
+      <Text fx:id="registerCondition" fill="#0900ff" layoutX="18.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Condition" textAlignment="CENTER" visible="false" wrappingWidth="226.40001220703118">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="8.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.0" wrappingWidth="19.17425537109375">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
