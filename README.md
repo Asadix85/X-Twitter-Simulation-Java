@@ -1,9 +1,13 @@
-X (Twitter) Social Network Simulator
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/🇬🇧-English-blue?style=for-the-badge" alt="English"></a>
+  <a href="README.fa.md"><img src="https://img.shields.io/badge/🇮🇷-فارسی-green?style=for-the-badge" alt="Persian"></a>
+</p>
+
+# X Social Network Simulation
+
 <div dir="rtl">
 
 </div>
-
----
 ### 📖 Project Introduction
 
 This project is a simulation of the **X platform (formerly Twitter)**, developed as part of the **Advanced Programming** course at the University of Isfahan. The main goal is to design and implement a desktop social network using **Java**, adhering to **Object-Oriented** principles, **MVC** architecture, and leveraging advanced concepts such as **network communication**, **concurrent programming**, and **database management**.
