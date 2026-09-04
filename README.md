@@ -77,6 +77,7 @@ The project is divided into two phases:
 This project follows the **MVC (Model-View-Controller)** architecture.
 
 #### Suggested Package Structure
+```text
 ├── model // Entities (User, Post, Hashtag, Report, Message, ...)
 ├── view // UI (JavaFX or Swing)
 ├── controller // Controllers and business logic
@@ -84,8 +85,7 @@ This project follows the **MVC (Model-View-Controller)** architecture.
 ├── network // Network communication (ClientHandler, NetworkPacket, ...)
 ├── exception // Custom exception classes
 └── util // Utilities (validation, scheduling, ...)
-
-text
+```
 
 #### Core Entities (Phase 1)
 - **User** (Normal, Blue, Golden) – with inheritance and polymorphism
